@@ -22,7 +22,7 @@ func init() {
 	once.Do(func() {
 		Logger = &logrus.Logger{}
 
-		level, err := logrus.ParseLevel(LOGLEVEL)
+		level, err := logrus.ParseLevel(Getenv("log_level", LOGLEVEL))
 		if err != nil {
 			panic(err)
 		}
