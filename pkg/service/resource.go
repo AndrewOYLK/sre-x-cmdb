@@ -2,6 +2,7 @@ package service
 
 import "sync"
 
-type Service struct {
+type ResourceService struct {
+	// store interface
 	mutex sync.Mutex
 }

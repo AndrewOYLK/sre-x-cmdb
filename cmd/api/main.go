@@ -8,11 +8,6 @@ import (
 	"github.com/AndrewOYLK/ou-cmdb/pkg/utils"
 )
 
-var (
-	metricsHost       = "0.0.0.0"
-	metricsPort int32 = 8383
-)
-
 func main() {
 	serverHost := utils.Getenv("server_host", "0.0.0.0")
 	serverPort := utils.Getenv("server_port", "8080")

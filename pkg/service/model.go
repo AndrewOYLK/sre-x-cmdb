@@ -1,5 +1,8 @@
 package service
 
 type ModolService struct {
-	Service
+	// store interface
+}
+
+func (m *ModolService) GetModel() {
 }
